@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #f5f4fe;
+    font-family: "Poppins", sans-serif;
+}
+* {
+    /* border: 1px green solid; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link {
+    @apply flex items-center gap-6 p-2 font-medium duration-300 rounded-md cursor-default md:cursor-pointer;
+}
+.active {
+    @apply text-blue-600 bg-blue-100;
+}
+.input_label {
+    @apply block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-blue-400;
+}
+.input {
+    @apply  w-full h-10 px-4 font-thin transition-all duration-200 ease-in-out border rounded-md outline-none bg-gray-50 drop-shadow-sm focus:bg-white focus:drop-shadow-md text-sm
+}
